@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Ankita 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel+Decorative:wght@400;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles-canvas"></canvas>
+<canvas id="constellation-canvas"></canvas>
+<div id="progress-bar"></div>
+<div class="bg-mesh"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- Floating Petals Container -->
+<div id="petals-container"></div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <canvas id="hero-stars"></canvas>
+  <div class="ring ring-1"></div>
+  <div class="ring ring-2"></div>
+  <div class="ring ring-3"></div>
+  <div class="hero-portrait">
+    <img src="imgg/img (7).jpg" alt="Ankita" onerror="this.src='imgg/img (1).jpg'">
+  </div>
+  <div class="hero-content">
+    <p class="hero-pre">✦ A Very Special Day ✦</p>
+    <h1 class="hero-name">Ankita</h1>
+    <div class="hero-divider"><span>✦</span></div>
+    <p class="hero-wish">Happy Birthday, Beautiful Soul 🌸</p>
+    <p class="hero-sub-type" id="heroSubType"><span class="type-cursor"></span></p>
+  </div><!-- end hero-content -->
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ===== SECTION DIVIDER ===== -->
+<div class="section-divider">
+  <div class="divider-line">
+    <div class="divider-gem"></div>
+    <div class="divider-gem" style="width:6px;height:6px;opacity:0.5;"></div>
+    <div class="divider-gem"></div>
+  </div>
+</div>
+
+<!-- ===== QUOTE ===== -->
+<section id="quote-section">
+  <div class="quote-orb quote-orb-1"></div>
+  <div class="quote-orb quote-orb-2"></div>
+  <p class="big-quote" id="quote">
+    "She blooms like the rarest flower —<br>
+    bright, wild, and impossibly beautiful.<br>
+    The world is better lit because she walks through it."
+  </p>
+  <p class="quote-name" id="quote-name">— With love, on your birthday —</p>
+</section>
+
+
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <span class="section-label">Through the Lens of Time</span>
+  <h2 class="section-title">Every Frame, A Memory</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item gi-1"><img src="imgg/img (1).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">A Beautiful Soul ✨</div></div>
+    <div class="gallery-item gi-2"><img src="imgg/img (2).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Radiant & Free 🌸</div></div>
+    <div class="gallery-item gi-3"><img src="imgg/img (7).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Pure Magic 💛</div></div>
+    <div class="gallery-item gi-4"><img src="imgg/img (8).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Timeless Grace 🌹</div></div>
+    <div class="gallery-item gi-5"><img src="imgg/img (10).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Golden Moments ✦</div></div>
+    <div class="gallery-item gi-6"><img src="imgg/img (12).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Simply Stunning 💫</div></div>
+    <div class="gallery-item gi-7"><img src="imgg/img (13).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Born to Shine 🌟</div></div>
+    <div class="gallery-item gi-8"><img src="imgg/img (14).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Effortlessly Lovely 🌺</div></div>
+    <div class="gallery-item gi-9"><img src="imgg/img (15).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Dreaming Big 🦋</div></div>
+    <div class="gallery-item gi-10"><img src="imgg/img (16).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Sunshine Personified ☀️</div></div>
+    <div class="gallery-item gi-11"><img src="imgg/img (22).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Unforgettable 💖</div></div>
+    <div class="gallery-item gi-12"><img src="imgg/img (28).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Wildly Beautiful 🌿</div></div>
+    <div class="gallery-item gi-13"><img src="imgg/img (30).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Heart of Gold ✨</div></div>
+    <div class="gallery-item gi-14"><img src="imgg/img (33).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Star in the Making 🌠</div></div>
+    <div class="gallery-item gi-15"><img src="imgg/img (34).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Cherished Always 🥰</div></div>
+    <div class="gallery-item gi-16"><img src="imgg/img (39).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">One of a Kind 🎀</div></div>
+    <div class="gallery-item gi-17"><img src="imgg/img (42).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Living the Dream ✦</div></div>
+    <div class="gallery-item gi-18"><img src="imgg/img (43).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Irreplaceable 💛</div></div>
+    <div class="gallery-item gi-19"><img src="imgg/img (45).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Bright as Stars 🌟</div></div>
+    <div class="gallery-item gi-20"><img src="imgg/img (46).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Always Blooming 🌸</div></div>
+    <div class="gallery-item gi-21"><img src="imgg/img (47).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Pure Joy 🎊</div></div>
+    <div class="gallery-item gi-22"><img src="imgg/img (48).jpg" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Forever Loved 💖</div></div>
+    <div class="gallery-item gi-23"><img src="imgg/img (1).webp" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">A Rare Beauty 🌺</div></div>
+    <div class="gallery-item gi-24"><img src="imgg/img (2).webp" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Glowing Always ✨</div></div>
+    <div class="gallery-item gi-25"><img src="imgg/img (3).webp" alt="Ankita"><div class="corner-tl"></div><div class="corner-br"></div><div class="img-overlay"></div><div class="photo-label">Happy Birthday! 🎂</div></div>
+  </div>
+</section>
+
+<!-- ===== LIGHTBOX ===== -->
+<div id="lightbox">
+  <div id="lightbox-close">✕</div>
+  <div id="lb-prev">‹</div>
+  <img id="lb-img" src="" alt="">
+  <div id="lb-next">›</div>
+  <div id="lb-counter"></div>
+</div>
+
+<!-- ===== LETTER ===== -->
+<section id="letter-section">
+  <div class="letter-card">
+    <div class="letter-seal">💌</div>
+    <div class="letter-heading">Dear Ankita,</div>
+    <div class="letter-body" id="letterBody"><span class="letter-cursor"></span></div>
+    <div class="letter-sign" id="letterSign">— With all the love in the universe 💛</div>
+  </div>
+</section>
+
+<!-- ===== WISHES ===== -->
+<section id="wishes">
+  <div class="wishes-backdrop"></div>
+  <span class="section-label">Birthday Wishes</span>
+  <h2 class="section-title">May Your Day Be As<br>Radiant As You</h2>
+  <div class="wish-cards">
+    <div class="wish-card" style="transition-delay:0.1s">
+      <span class="wish-icon">🌸</span>
+      <span class="wish-title">Joy & Laughter</span>
+      <p class="wish-text">May every moment of this new year overflow with the kind of laughter that makes your eyes crinkle and your soul feel weightless.</p>
+    </div>
+    <div class="wish-card" style="transition-delay:0.25s">
+      <span class="wish-icon">✨</span>
+      <span class="wish-title">Dreams & Glory</span>
+      <p class="wish-text">May every dream you've whispered to the stars find its way home to you — bigger, brighter, and more beautiful than you imagined.</p>
+    </div>
+    <div class="wish-card" style="transition-delay:0.4s">
+      <span class="wish-icon">💫</span>
+      <span class="wish-title">Love & Light</span>
+      <p class="wish-text">May you be wrapped in love so warm it feels like sunlight, and may the people around you always see the magic you carry within.</p>
+    </div>
+    <div class="wish-card" style="transition-delay:0.55s">
+      <span class="wish-icon">🌹</span>
+      <span class="wish-title">Adventure Awaits</span>
+      <p class="wish-text">May this year take you to places that take your breath away, fill your heart with stories worth telling, and give you memories worth cherishing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINALE ===== -->
+<section id="finale">
+  <div class="finale-glow"></div>
+  <!-- Glitter particles -->
+  <div class="glitter-particle" style="width:4px;height:4px;background:var(--gold);top:20%;left:10%;--gop:0.7;animation-duration:3s;animation-delay:0s;"></div>
+  <div class="glitter-particle" style="width:3px;height:3px;background:var(--rose-light);top:30%;left:85%;--gop:0.5;animation-duration:4s;animation-delay:-1s;"></div>
+  <div class="glitter-particle" style="width:5px;height:5px;background:var(--gold-light);top:70%;left:20%;--gop:0.6;animation-duration:5s;animation-delay:-2s;"></div>
+  <div class="glitter-particle" style="width:3px;height:3px;background:var(--rose);top:60%;left:75%;--gop:0.4;animation-duration:3.5s;animation-delay:-0.5s;"></div>
+  <div class="glitter-particle" style="width:6px;height:6px;background:var(--gold);top:15%;left:55%;--gop:0.8;animation-duration:4.5s;animation-delay:-1.5s;"></div>
+  <div class="glitter-particle" style="width:3px;height:3px;background:var(--cream);top:80%;left:45%;--gop:0.3;animation-duration:6s;animation-delay:-3s;"></div>
+  <h2 class="finale-title" id="finaleTitle">
+    Here's to you, Ankita 🥂
+  </h2>
+  <p class="finale-text" id="finaleText">
+    On this beautiful day, the universe celebrates<br>
+    one of its most radiant creations. You are<br>
+    cherished beyond words. Happy Birthday.
+  </p>
+  <span class="finale-hearts">💛🌸💛</span>
+  <span class="finale-name-big" id="finaleName">Ankita Bhattacharyya</span>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
